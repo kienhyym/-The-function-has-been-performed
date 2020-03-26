@@ -1,4 +1,4 @@
-self.$el.find("#chonfile").bind('click', function () {
+self.$el.find("#chonfile").unbind('click').bind('click', function () {
     $.ajax({
         url: self.getApp().serviceURL + "/api/v1/read_file_json",
         method: "POST",
